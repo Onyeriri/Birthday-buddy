@@ -6,11 +6,11 @@ import Header from './components/Header';
 
 const AppContext = createContext();
 export const useAppContext = () => useContext(AppContext);
-const text = `${data.length} Birthdays Today. `
 
 
 const App = () => {
   const [people, setPeople] = useState(data);
+  const text = `${people.length} Birthdays Today. `
 
   return <main>
     <div className='container'>
